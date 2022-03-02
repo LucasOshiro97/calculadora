@@ -10,35 +10,29 @@
 </head>
 <body>
     
-        <div id="calculadora">
-            <div>
-                <input type="text" nome="res" class="text" disabled>
-            </div>
-            <div>
-                   <input type="button" value="7" class="num" nome="num">
-                   <input type="button" value="8" class="num" nome="num">
-                   <input type="button" value="9" class="num" nome="num">
-                   <input type="button" value="/" class="num" nome="num">
-                   <input type="button" value="CE" class="num" nome="num">
-            </div>
-            <div>
-                <input type="button" value="4" class="num" nome="num">
-                   <input type="button" value="5" class="num" nome="num">
-                   <input type="button" value="6" class="num" nome="num">
-                   <input type="button" value="x" class="num" nome="num">
-            </div>
-            <div>
-                <input type="button" value="1" class="num" nome="num">
-                   <input type="button" value="2" class="num" nome="num">
-                   <input type="button" value="3" class="num" nome="num">
-                   <input type="button" value="-" class="num" nome="num">
-            </div>
-            <div>
-                <input type="button" value="." class="num" nome="num">
-                   <input type="button" value="0" class="num" nome="num">
-                   <input type="button" value="+" class="num" nome="num">
-                   <input type="button" value="=" class="num" nome="num">
-            </div>
+        <div id="principal">
+            
+                <form action="" name="calculadora">
+                    <input type="text" name="res" class="text" disabled><br>
+                       <input type="button" value="7" class="num" name="num7" onclick="displaynum(num7.value)">
+                       <input type="button" value="8" class="num" name="num8" onclick="displaynum(num8.value)">
+                       <input type="button" value="9" class="num" name="num9" onclick="displaynum(num9.value)">
+                       <input type="button" value="/" class="num" name="but1" onclick="displaynum(but1.value)">
+                       <input type="text" value="CE" class="text" name="res2" onclick="location.reload()" > <br><!--location reload, este comando a clicar nele, apaga as informaçoes para uma nova conta ser realizada-->
+                    <input type="button" value="4" class="num" name="num4" onclick="displaynum(num4.value)">
+                       <input type="button" value="5" class="num" name="num5" onclick="displaynum(num5.value)">
+                       <input type="button" value="6" class="num" name="num6" onclick="displaynum(num6.value)">
+                       <input type="button" value="x" class="num" name="but2" onclick="displaynum(but2.value)"><br>
+                    <input type="button" value="1" class="num" name="num1" onclick="displaynum(num1.value)">
+                       <input type="button" value="2" class="num" name="num2" onclick="displaynum(num2.value)">
+                       <input type="button" value="3" class="num" name="num3" onclick="displaynum(num3.value)">
+                       <input type="button" value="-" class="num" name="but3" onclick="displaynum(but3.value)"><br>
+                    <input type="button" value="." class="num" nome="but4" onclick="displaynum(but4.value)">
+                       <input type="button" value="0" class="num" name="num0" onclick="displaynum(num0.value)">
+                       <input type="button" value="+" class="num" name="but5" onclick="displaynum(but5.value)">
+                       <input type="button" value="=" class="num" name="but6" onclick="displaynum(but6.value)">
+                </form>
+           
         </div>
     
 </body>
