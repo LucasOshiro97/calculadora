@@ -9,31 +9,36 @@
     <script src="script.js"></script>
 </head>
 <body>
-    
-        <div id="principal">
-            
-                <form action="" name="calculadora">
-                    <input type="text" name="res" class="text" disabled><br>
-                       <input type="button" value="7" class="num" name="num7" onclick="displaynum(num7.value)">
-                       <input type="button" value="8" class="num" name="num8" onclick="displaynum(num8.value)">
-                       <input type="button" value="9" class="num" name="num9" onclick="displaynum(num9.value)">
-                       <input type="button" value="/" class="num" name="but1" onclick="displaynum(but1.value)">
-                       <input type="text" value="CE" class="text" name="res2" onclick="location.reload()" > <br><!--location reload, este comando a clicar nele, apaga as informaçoes para uma nova conta ser realizada-->
-                    <input type="button" value="4" class="num" name="num4" onclick="displaynum(num4.value)">
-                       <input type="button" value="5" class="num" name="num5" onclick="displaynum(num5.value)">
-                       <input type="button" value="6" class="num" name="num6" onclick="displaynum(num6.value)">
-                       <input type="button" value="x" class="num" name="but2" onclick="displaynum(but2.value)"><br>
-                    <input type="button" value="1" class="num" name="num1" onclick="displaynum(num1.value)">
-                       <input type="button" value="2" class="num" name="num2" onclick="displaynum(num2.value)">
-                       <input type="button" value="3" class="num" name="num3" onclick="displaynum(num3.value)">
-                       <input type="button" value="-" class="num" name="but3" onclick="displaynum(but3.value)"><br>
-                    <input type="button" value="." class="num" nome="but4" onclick="displaynum(but4.value)">
-                       <input type="button" value="0" class="num" name="num0" onclick="displaynum(num0.value)">
-                       <input type="button" value="+" class="num" name="but5" onclick="displaynum(but5.value)">
-                       <input type="button" value="=" class="num" name="but6" onclick="displaynum(but6.value)">
-                </form>
-           
-        </div>
+    <div>
+       <form action="" name="calculator">
+          <input type="text" class="text maincolor" name="text1" disabled>
+          <input type="text" class="text1 maincolor" name="text12" value="C" onclick="location.reload()"><br>
+
+          <input type="button" class="num maincolor" name="btn7" value="7" onclick="displaynum(btn7.value)">
+          <input type="button" class="num maincolor" name="btn8" value="8" onclick="displaynum(btn8.value)">
+          <input type="button" class="num maincolor" name="btn9" value="9" onclick="displaynum(btn9.value)">
+          <input type="button" class="num blue" name="addbtn" value="+" onclick="displaynum(addbtn.value)"><br>
+
+          <input type="button" class="num maincolor" name="btn4" value="4" onclick="displaynum(btn4.value)">
+          <input type="button" class="num maincolor" name="btn5" value="5" onclick="displaynum(btn5.value)">
+          <input type="button" class="num maincolor" name="btn6" value="6" onclick="displaynum(btn6.value)">
+          <input type="button" class="num pin" name="subbtn" value="-" onclick="displaynum(subbtn.value)"><br>
+
+          <input type="button" class="num maincolor" name="btn1" value="1" onclick="displaynum(btn1.value)">
+          <input type="button" class="num maincolor" name="btn2" value="2" onclick="displaynum(btn2.value)">
+          <input type="button" class="num maincolor" name="btn3" value="3" onclick="displaynum(btn3.value)">
+          <input type="button" class="num gre" name="mulbtn" value="*" onclick="displaynum(mulbtn.value)"><br>
+
+          <input type="button" class="num maincolor" name="dot" value="." onclick="displaynum(dot.value)">
+          <input type="button" class="num maincolor" name="btn0" value="0" onclick="displaynum(btn0.value)">
+          <input type="button" class="num bur" name="eqlbtn" value="=" onclick="text1.value=eval(text1.value)">
+          <input type="button" class="num ora" name="divbtn" value="/" onclick="displaynum(divbtn.value)"><br>
+
+          
+       </form>
+    </div>
+
+       
     
 </body>
 </html>
